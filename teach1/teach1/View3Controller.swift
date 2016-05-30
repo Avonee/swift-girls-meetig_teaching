@@ -10,16 +10,22 @@ import UIKit
 
 class View3Controller: UIViewController {
 
+    //宣告 web view
     @IBOutlet weak var webView: UIWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
         
-        
+        //網址為...
         let address = "https://www.google.com/"
+        
+        //網址轉成url型態
         let url = NSURL(string: address)
+        
+        //請求使用url
         let request = NSURLRequest(URL: url!)
+        
+        //webview的載入請求
         self.webView.loadRequest(request)
     }
 

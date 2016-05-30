@@ -10,15 +10,30 @@ import UIKit
 
 class View2Controller: UIViewController {
 
+    //文字顯示欄
     @IBOutlet weak var name_get: UILabel!
-    var text = ""
+    
+    
+    //圖片視圖
     @IBOutlet weak var head: UIImageView!
+    
+    
+    //定義 第二頁接收的是文字
+    var text = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-    name_get.text = text
         
+        //文字顯示欄裡的文字 ＝ 第二頁接收的文字
+        name_get.text = text
+        
+        //圖片的遮罩之圓角弧度半徑 是 圖片本身寬度的1/2
         self.head.layer.cornerRadius = self.head.frame.size.width/2
+        
+        //圖片的遮罩是否要放上去？ 
         self.head.layer.masksToBounds = true
+        
+        
         // Do any additional setup after loading the view.
     }
 
