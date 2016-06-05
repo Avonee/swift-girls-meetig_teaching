@@ -19,13 +19,13 @@ class View2Controller: UIViewController {
     
     
     //定義 第二頁接收的是文字
-    var text = ""
+    var name = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //文字顯示欄裡的文字 ＝ 第二頁接收的文字
-        name_get.text = text
+        name_get.text = name
         
         //圖片的遮罩之圓角弧度半徑 是 圖片本身寬度的1/2
         self.head.layer.cornerRadius = self.head.frame.size.width/2

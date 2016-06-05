@@ -35,7 +35,7 @@ class ViewController: UIViewController {
             let seconed = segue.destinationViewController as! View2Controller
         
         //第二頁的文字 = 第一頁 放文字籃框裡的文字
-            seconed.text = self.nameInput.text!
+            seconed.name = self.nameInput.text!
             
       
         
