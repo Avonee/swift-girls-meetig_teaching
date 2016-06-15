@@ -61,3 +61,13 @@ repeat{
     
 }while weight == 10
 
+var sum:Int = 0
+for number in 1...5{
+    sum = sum + number
+}
+print("\(sum)")
+
+
+
+
+
